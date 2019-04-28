@@ -1,0 +1,16 @@
+.Config h2{
+    margin-bottom: 30px;
+}
+
+.Config .content{
+    background: #fff;
+    border-radius: 10px;
+}
+
+.Config h3{
+    margin:0;
+}
+
+.Config .row{
+    margin:0;
+}

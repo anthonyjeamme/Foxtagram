@@ -1,0 +1,35 @@
+.Schedule .interval{
+    background: #eee;
+    transition: background-color 200ms;
+}
+.Schedule .interval:hover{
+
+    background: #ddd;
+    cursor: pointer;
+}
+.Schedule .interval .label{
+
+    position: absolute;
+    width: 20px;
+    text-align: center;
+    margin-left: -26px;
+    background: #fff;
+    border-radius: 10px;
+    color:#777;
+    margin-top: -30px;
+}
+
+.Schedule .interval.active{
+    background: #b64f23;
+}
+.interval.active:hover{
+    background: #923a14;
+}
+
+.Schedule .row{
+    margin:0;
+}
+
+.Schedule .content{
+    padding: 20px 40px 20px 40px !important;
+}

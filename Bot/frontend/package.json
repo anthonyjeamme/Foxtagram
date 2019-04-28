@@ -1,0 +1,28 @@
+{
+  "name": "react-redux-project",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "fillvertical": "git+https://github.com/tonyjahim/FillVertical.git",
+    "react": "^16.2.0",
+    "react-confirm-alert": "^1.0.8",
+    "react-dom": "^16.0.0",
+    "react-facebook-login": "^3.6.2",
+    "react-intl": "^2.4.0",
+    "react-redux": "^5.0.6",
+    "react-router-dom": "^4.2.2",
+    "react-scripts": "1.0.14",
+    "recharts": "^1.0.0-beta.10",
+    "redux": "^3.7.2",
+    "redux-thunk": "^2.2.0",
+    "url-join": "^4.0.0"
+  },
+  "scripts": {
+    "start": "set REACT_APP_WS_URL=http://localhost:44333&& react-scripts start",
+    "build": "react-scripts build ",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "go": "npm run build && npm run install"
+  }
+}

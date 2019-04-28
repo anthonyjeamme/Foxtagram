@@ -1,0 +1,218 @@
+button.active{
+    background:#27ae60;
+    border-color: #1b944d;
+    color:#fff;
+    text-shadow: none;
+}
+
+button.inactive{
+    background:#e74c3c;
+    border-color: #d13b2a;
+}
+
+.BigNumber{
+    padding:20px;
+    margin:5px;
+    background: #fff;
+    font-size: 24px;
+    width: 100px;
+    display: inline-block;
+    text-align: center;
+}
+
+.BigNumberLine{
+    margin: 10px 0 10px 0;
+    font-size: 20px;
+    width: 500px;
+    margin:auto;
+}
+.statusBar{
+    background: #ccc;
+    padding:3px;
+}
+.statusBar button{
+    background: #777;
+    margin:5px;
+    padding: 5px 15px 5px 15px;
+    border:none;
+    text-shadow: none;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.statusBar button.success{
+    background: #27ae60;
+}
+.Card{
+    padding: 0;
+}
+.Card .content,.ServerCard .content, .Schedule .content{
+    margin:10px;
+    border-radius: 5px;
+    overflow: hidden;
+    background: #f8f9fa ;
+    border-radius: 10px;
+    padding:20px 0 20px 0;
+}
+
+.ServerCard{
+    text-align: center;
+    padding: 0;
+}
+.ServerCard .description{
+    color:#555;
+}
+.ServerCard .actionServer{
+    cursor: pointer;
+}
+
+
+.started .fa-cog{
+    color:#1b944d;
+}
+.stopped .fa-cog{
+    color:#bbb;
+}
+.started .fa-spin{
+    animation-play-state:  running;
+}
+
+.stopped .fa-spin{
+    animation-play-state: paused;
+}
+
+.ServerCard.started .icon{
+    color:#1b944d;
+}
+.ServerCard.started .icon .fa-spin{
+    animation-play-state:  running;
+}
+
+.ServerCard.stopped .icon{
+    color:#bbb;
+}
+.ServerCard.stopped .icon .fa-spin{
+    animation-play-state: paused;
+}
+
+.ServerCard .icon{
+    font-size: 80px;
+    transition: color 500ms;
+}
+.ServerCard table{
+    margin-top: 15px;
+}
+.ServerCard .details{
+    margin-top: 15px;
+}
+.ServerCard .details .fa-ban{
+    color:#e74c3c;
+}
+.ServerCard .details .fa-check{
+    color:#2ecc71;
+}
+.ServerCard table td{
+    padding: 5px;
+}
+
+.Card .title, .ServerCard .title{
+
+    font-size: 35px;
+    text-align: center;
+}
+.Card .subtitle{
+
+    font-size: 12px;
+    text-align: center;
+    margin-bottom: 10px;
+    color:#777;
+}
+.Dashboard .row{
+
+    width:"100%";
+    margin:0;
+}
+.generalSituation{
+
+    padding:10px 0 10px 0;
+}
+.generalSituation .alert{
+
+    margin:0;
+    text-align: center;
+    font-size: 12px;
+}
+.Schedule .content{
+
+    padding: 10px;
+}
+.Schedule .content .interval{
+
+    height: 100px;
+    border-right: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+}
+.Schedule .content .row{
+    padding:0;
+}
+.Card .content.alert{
+    background-color: #e8cb9c;
+}
+.Card .content.error{
+    background-color: #d13b2a
+}
+.logoPreview{
+    height: 75px;
+    border-radius: 75px;
+    cursor: pointer;
+}
+.accountProfileImg{
+    margin-bottom: 15px;
+}
+.accountProfileImg img{
+    width: 70px;
+    height: 70px;
+    z-index: 999 !important;
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 15px;
+    background: url('/img/emptyProfile.jpg');
+    background-size: 70px 70px ;
+    font-size: 0
+}
+.accountProfileImg .fa-cog{
+    font-size: 100px;
+    vertical-align: middle;
+    z-index: 10 !important;
+}
+.profileInfo{
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.profileInfo .info{
+    padding:5px 10px 5px 10px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.moreButton{
+    cursor: pointer;
+}
+
+.gray{
+    color:#aaa
+}
+
+.logs{
+    margin-top: 50px;
+    font-size: 12px;
+    background: #333;
+    color:#fff;
+    font-family: 'Courier New', Courier, monospace;
+    height:100px;
+    width: 100%;
+    overflow-y: scroll;
+    text-align: left;
+}

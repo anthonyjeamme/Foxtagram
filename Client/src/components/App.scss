@@ -1,0 +1,77 @@
+@import "bulma/sass/utilities/initial-variables";
+@import "bulma/sass/utilities/functions";
+
+$primary: #cd6133;
+
+$body-background-color: #eee;
+$hr-background-color: #ddd;
+
+.is-margin-auto{
+    margin: auto;
+}
+
+.is-rounded{
+    border-radius: 50%;
+}
+
+.is-border-primary{
+    border-top: 4px solid $primary;
+}
+
+.is-delayed-500{
+    animation-delay: 500ms;
+}
+
+.is-delayed-1000{
+    animation-delay: 1000ms;
+}
+
+.is-delayed-1500{
+    animation-delay: 1500ms;
+}
+
+.is-delayed-2000{
+    animation-delay: 2000ms;
+}
+
+.is-delayed-2500{
+    animation-delay: 2500ms;
+}
+
+.is-cursor-pointer{
+    cursor: pointer;
+}
+
+.StripeElement{
+    font-size: 18px;
+}
+
+/* Doc : https://bulma.io/documentation/overview/customize */
+
+@import 'bulma/bulma';
+@import 'bulma-extensions/bulma-pricingtable/dist/css/bulma-pricingtable.sass';
+
+$navbar-background-color: $primary;
+$footer-background-color: #444 !important;
+
+.navbar.is-primary{
+    background-color: $primary !important;
+}
+
+.is-blur-transition{
+    transition: filter 200ms;
+}
+.is-blur{
+    filter: blur(4px);
+}
+.is-shadow{
+    box-shadow: 0 3px 9px rgba(0,0,0,0.2)
+}
+
+.step-list li{
+    background: none;
+    padding: 0;
+    border-radius: 4px;
+    max-width: 600px;
+    margin:0 auto;
+}

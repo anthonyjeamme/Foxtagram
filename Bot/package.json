@@ -1,0 +1,72 @@
+{
+  "name": "foxstagram",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "babel-node ./src/app.js --presets es2015,stage-2",
+    
+    "db_correction": "babel-node src/launchers/db_correction.js --presets es2015,stage-2",
+    
+    "test:follow": "babel-node src/launchers/follow_test.js --presets es2015,stage-2",
+    "test:stats_db": "babel-node src/launchers/stats_db.js --presets es2015,stage-2",
+    "test:stats": "babel-node src/launchers/stats.js --presets es2015,stage-2",
+    "test:flash": "babel-node src/launchers/flash.js --presets es2015,stage-2",
+
+    "module:server":"babel-node src/launchers/server.js --presets es2015,stage-2",
+    "module:follower":"babel-node src/launchers/follower.js --presets es2015,stage-2",
+    "module:scanner":"babel-node src/launchers/scanner.js --presets es2015,stage-2",
+
+    "clean:server_public": "rm server_public/* -rf",
+    "frontend:build": "cd frontend && npm run build",
+    "frontend:import": "cp frontend/build/* server_public -rf",
+    "frontend:deploy": "npm run clean:server_public && npm run frontend:build && npm run frontend:import",
+
+
+    "build": "webpack",
+    "flash": "babel-node src/launchers/test_flash.js --presets es2015,stage-2,stage-0",
+    "retro_analyze": "babel-node src/launchers/retro_analyze.js --presets es2015,stage-2",
+    "learn": "babel-node src/launchers/learn.js --presets es2015,stage-2",
+    "test": "mocha ./test/ --recursive --require babel-polyfill --require babel-core/register --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "cheerio": "^1.0.0-rc.2",
+    "child_process": "^1.0.2",
+    "electron": "^1.4.13",
+    "express": "^4.16.2",
+    "fs": "0.0.1-security",
+    "helmet": "^3.12.0",
+    "hoek": "^5.0.3",
+    "log4js": "^2.5.3",
+    "lokijs": "^1.5.3",
+    "mkdirp": "^0.5.1",
+    "net": "^1.0.2",
+    "network": "^0.4.1",
+    "nightmare": "^2.10.0",
+    "node-fetch": "^2.1.1",
+    "opn": "^5.2.0",
+    "process-nextick-args": "^2.0.0",
+    "request": "^2.83.0",
+    "request-promise": "^4.2.2",
+    "safe-buffer": "^5.1.1",
+    "tls": "0.0.1",
+    "util-deprecate": "^1.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "^9.4.6",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "chai": "^4.1.2",
+    "jshint": "^2.9.5",
+    "mocha": "^5.0.1",
+    "webpack": "^4.0.1"
+  }
+}
